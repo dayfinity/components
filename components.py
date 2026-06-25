@@ -81,3 +81,21 @@ def main():
         )
     )
 
+    report = (
+        session.build_report(
+            signed_tx
+        )
+    )
+
+    print("Transaction signed")
+    print(
+        json.dumps(
+            report,
+            indent=2
+        )
+    )
+
+
+if __name__ == "__main__":
+    main()
+```
